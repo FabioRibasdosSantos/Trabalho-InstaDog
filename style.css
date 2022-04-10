@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instadog {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-foto {
+    display: center;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.instagram-foto img {
+    height: 20rem;
+}
+
+.instagram-continue {
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-evenly; /* vertical */
+    flex-direction: column;
+    width: 50%;
+    min-height: 35rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff9a2;
+    width: 90%;
+    padding: 2rem 0;
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 1rem;
+}
+
+.group:nth-child(1) {
+    min-height: 25rem;
+}
+
+.instagram-logo {
+    height: 6rem;
+}
+
+.profile-photo {
+    display: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height: 8rem;
+}
+
+.instagram-login {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.instagram-logout {
+    color: #ff0000;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: rgb(0, 0, 0);
+}
+
+.link-blue {
+    color: #1100ff;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 110%;
+    padding: 1rem 0;
+}
+
+.download {
+    display: center;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 0rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download1 {
+    background-image: url("./img/instadog/apple-button")  
+}
+
+.app-download2 {
+    background-image: url("./img\ instadog/googleplay-button");
+}
+
+.get-the-app img {
+    height: 3rem;
+}
+
+@media (max-width: 980px) {
+    .instadog {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .instadog {
+        width: 100%;
+    }
+
+    .instagram-foto {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
+}
